@@ -8,6 +8,7 @@ import {
   FileText,
   Tag,
   MessageSquare,
+  MessageCircle,
 } from "lucide-react";
 
 export const RESUME_DATA = {
@@ -16,11 +17,11 @@ export const RESUME_DATA = {
   location: "Dhanmondi, Dhaka, Bangladesh",
   phone: "+880 1979237056",
   email: "rakibulislamemon60@gmail.com",
-  github: "https://github.com/rakibul-islam-emon",
-  linkedin: "https://linkedin.com/in/rakibul-islam-emon",
+  github: "https://github.com/Rakibulislam-emon",
+  linkedin: "https://www.linkedin.com/in/rakibul-islam-emon",
   portfolio: "https://portfolio.rakibul.com",
   about:
-    "Passionate about creating responsive, user-friendly interfaces and scalable web applications. Developed platforms like Audit Tracker (Enterprise audit management system), Nest-Grocery (E-commerce website), and GitHub Repo Remover (GitHub Manager). Eager to contribute to dynamic teams and continuously improve code quality in an Agile environment.",
+    "Building Scalable Enterprise Systems & High-Performance E-commerce.I architect full-stack applications using Next.js, MERN, and TypeScript. Focused on Role-Based Access Control (RBAC), real-time data flow, and pixel-perfect UI.",
   skills: [
     { name: "HTML", category: "Core" },
     { name: "CSS", category: "Core" },
@@ -44,6 +45,9 @@ export const RESUME_DATA = {
       id: "audit-tracker",
       title: "Audit Tracker",
       subtitle: "Enterprise Audit System",
+      category: "Full Stack",
+      featured: true,
+      image: "/projects/audit-tracker.png",
       description:
         "A comprehensive platform for managing audits, workflows, and reporting for multiple organizations. Implemented role-based access control and dynamic audit templates.",
       features: [
@@ -60,12 +64,19 @@ export const RESUME_DATA = {
         "MongoDB",
         "JWT",
       ],
-      links: { live: "#", client: "#", server: "#" },
+      links: {
+        live: "https://audit-management-chi.vercel.app/",
+        client: "https://github.com/Rakibulislam-emon/Audit-Tracker",
+        server: "#",
+      },
     },
     {
       id: "nest-grocery",
       title: "NEST GROCERY SHOP",
       subtitle: "E-commerce Platform",
+      category: "Full Stack",
+      featured: true,
+      image: "/projects/nest-grocery.png",
       description:
         "A full-stack e-commerce solution with a focus on user experience and secure transactions. Integrated Stripe and Redux Persist.",
       features: [
@@ -82,12 +93,19 @@ export const RESUME_DATA = {
         "Clerk",
         "Stripe",
       ],
-      links: { live: "#", client: "#", server: "#" },
+      links: {
+        live: "https://nest-client-henna.vercel.app/",
+        client: "https://github.com/Rakibulislam-emon/Nest_Ecommerce",
+        server: "#",
+      },
     },
     {
       id: "repo-remover",
       title: "GITHUB REPO REMOVER",
       subtitle: "Backend/API-Focused Project",
+      category: "Tools",
+      featured: false,
+      image: "/projects/repo-remover.png",
       description:
         "A tool for developers to efficiently manage and batch-delete their GitHub repositories using GitHub OAuth.",
       features: [
@@ -104,7 +122,12 @@ export const RESUME_DATA = {
         "GitHub API",
         "OAuth 2.0",
       ],
-      links: { live: "#", client: "#", server: "#" },
+      links: {
+        live: "https://github-repo-remover.vercel.app/",
+        client:
+          "https://github.com/Rakibulislam-emon/github_repository_remover",
+        server: "#",
+      },
     },
   ],
   education: [
@@ -133,14 +156,18 @@ export const NAV_ITEMS = [
 export const SOCIAL_LINKS = [
   {
     icon: Github,
-    href: "https://github.com/rakibul-islam-emon",
+    href: "https://github.com/Rakibulislam-emon",
     label: "Github",
   },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/in/rakibul-islam-emon",
+    href: "https://www.linkedin.com/in/rakibul-islam-emon/",
     label: "Linkedin",
   },
-  { icon: Mail, href: "mailto:rjrayat37@gmail.com", label: "Email" },
-  { icon: Smartphone, href: "tel:+8801979237056", label: "Phone" },
+  { icon: Mail, href: "mailto:rakibulislamemon60@gmail.com", label: "Email" },
+  {
+    icon: MessageCircle,
+    href: "https://wa.me/8801979237056",
+    label: "WhatsApp",
+  },
 ];
