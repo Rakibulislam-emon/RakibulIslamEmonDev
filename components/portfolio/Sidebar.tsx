@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Download } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import portfolioImage from "@/public/profile.png";
 export default function Sidebar() {
   return (
     <div>
@@ -40,9 +41,9 @@ export default function Sidebar() {
           <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/80 z-10 rounded-[2.5rem]" />
           <Avatar className="h-full w-full rounded-[2.5rem] border-0 relative overflow-hidden">
             <AvatarImage
-              // src={portfolioImage}
-              src="https://i.ibb.co.com/6cq8j7QB/tinywow-profile-photo-83816897.png"
-              alt="Rayat"
+              src={portfolioImage}
+              // src="https://i.ibb.co.com/6cq8j7QB/tinywow-profile-photo-83816897.png"
+              alt="Rakibul Islam Emon"
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <AvatarFallback className="bg-sidebar-accent text-sidebar-foreground text-3xl font-bold">
@@ -52,7 +53,7 @@ export default function Sidebar() {
 
           {/* Stylized Name Overlay */}
           <div className="absolute -bottom-4 left-0 right-0 text-center z-20 pointer-events-none">
-            <h2 className="text-5xl font-medium text-white tracking-tighter drop-shadow-2xl">
+            <h2 className="text-5xl font-medium tracking-tighter drop-shadow-2xl bg-linear-to-b from-white via-white to-slate-900 dark:from-white dark:to-white bg-clip-text text-transparent">
               <>ℛ𝒶𝓀𝒾𝒷</>
             </h2>
           </div>

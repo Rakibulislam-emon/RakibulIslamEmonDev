@@ -145,7 +145,7 @@ function ProjectCard({
               href={project.links.client}
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute top-4 right-4 z-20 p-2 bg-background/60 backdrop-blur-md rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 opacity-0 group-hover/card:opacity-100 transform -translate-y-2 group-hover/card:translate-y-0"
+              className="absolute top-4 right-4 z-20 p-2 bg-background/60 backdrop-blur-md rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 opacity-100 md:opacity-0 md:group-hover/card:opacity-100 transform translate-y-0 md:-translate-y-2 md:group-hover/card:translate-y-0"
               onClick={(e) => e.stopPropagation()}
             >
               <Github size={18} />
